@@ -1,0 +1,227 @@
+@import "mixins";
+
+.header {
+	padding: 0 15px;
+	&__container {
+		max-width: 1185px;
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__logo {
+		@include flex-center;
+		padding: 0px 8px 0px 0px;
+	}
+
+	&__images {
+		display: flex;
+		position: relative;
+		@include flex-center;
+		@include adaptiveFont(100, 50);
+	}
+	&__sub-image img {
+		width: 100%;
+		height: 100%;
+	}
+	&__sub-image {
+		width: 100%;
+		height: 100%;
+		padding: 15px;
+		position: absolute;
+	}
+	&__name {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1 0 auto;
+	}
+	&__name span {
+		font-family: "Sofia";
+		font-weight: 400;
+		// font-size: rem(32.1);
+		@include adaptiveFont(32, 16);
+		line-height: rem(51);
+		color: #ffffff;
+	}
+
+	&__navigthion {
+		@include flex-center;
+	}
+	&__silka {
+		/*   background: transparent; */
+		cursor: pointer;
+		transition: all 0.7s ease;
+		position: relative;
+		display: inline-block;
+
+		outline: none;
+	}
+	&__spisok {
+		gap: 66px;
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 100;
+		// font-size: 32.1525px;
+		@include adaptiveFont(32, 16);
+		line-height: 38px;
+		/* identical to box height */
+		display: flex;
+	}
+
+	&__end {
+		margin: 0 0 0 66px;
+		@include flex-center;
+	}
+}
+/* 3 */
+.header__silka {
+	color: #ffffff;
+	background: rgb(0, 172, 238);
+	background: #8b4513;
+	border-radius: 50%;
+
+	// width: 230px;
+	// height: 40px;
+
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+.header__silka span {
+	position: relative;
+	// padding: 0 20px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.header__silka:before,
+.header__silka:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 0;
+	background: rgb(255, 255, 255);
+	transition: all 0.7s ease;
+}
+.header__silka:before {
+	height: 0%;
+	width: 2px;
+}
+.header__silka:after {
+	width: 0%;
+	height: 2px;
+}
+.header__silka:hover {
+	background: transparent;
+	box-shadow: none;
+}
+.header__silka:hover:before {
+	height: 100%;
+}
+.header__silka:hover:after {
+	width: 100%;
+}
+.header__silka span:hover {
+	color: #ffffff;
+}
+.header__silka span:before,
+.header__silka span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	background: rgb(255, 255, 255);
+	transition: all 0.7s ease;
+}
+.header__silka span:before {
+	width: 2px;
+	height: 0%;
+}
+.header__silka span:after {
+	width: 0%;
+	height: 2px;
+}
+.header__silka span:hover:before {
+	height: 100%;
+}
+.header__silka span:hover:after {
+	width: 100%;
+}
+@media (max-width: 375px) {
+	.header__images {
+		display: none;
+	}
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.header__images {
+		display: none;
+	}
+	.header__spisok {
+		gap: 15px;
+	}
+	.header__end {
+		margin: 0 0 0 43px;
+		@include flex-center;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.header__images {
+		display: none;
+	}
+	.header__spisok {
+		gap: 15px;
+	}
+	.header__end {
+		margin: 0 0 0 43px;
+		@include flex-center;
+	}
+}
+@media (min-width: 480px) and (max-width: 768px) {
+	.header__images {
+		display: none;
+	}
+	.header__spisok {
+		gap: 15px;
+	}
+	.header__end {
+		margin: 0 0 0 33px;
+		@include flex-center;
+	}
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.header__images {
+		display: none;
+	}
+	.header__spisok {
+		gap: 15px;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.header__images {
+		display: none;
+	}
+	.header__spisok {
+		gap: 10px;
+	}
+	.header__spisok li {
+		@include flex-center;
+	}
+	.header__end {
+		margin: 0 0 0 33px;
+		@include flex-center;
+	}
+}

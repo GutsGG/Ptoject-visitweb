@@ -1,0 +1,506 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-BlackItalic.woff2") format("woff2"), url("../fonts/Raleway-BlackItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Raleway-ExtraBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-BoldItalic.woff2") format("woff2"), url("../fonts/Raleway-BoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-ExtraLight.woff2") format("woff2"), url("../fonts/Raleway-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Raleway-ExtraLightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Italic.woff2") format("woff2"), url("../fonts/Raleway-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-LightItalic.woff2") format("woff2"), url("../fonts/Raleway-LightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-MediumItalic.woff2") format("woff2"), url("../fonts/Raleway-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Raleway-SemiBoldItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-Thin.woff2") format("woff2"), url("../fonts/Raleway-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url("../fonts/Raleway-ThinItalic.woff2") format("woff2"), url("../fonts/Raleway-ThinItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Sofia;
+  font-display: swap;
+  src: url("../fonts/Sofia-Regular.woff2") format("woff2"), url("../fonts/Sofia-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.bigred {
+  font-size: 20px;
+  color: red;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 15px;
+}
+.header__container {
+  max-width: 1185px;
+  margin: 0 auto;
+}
+.header__row {
+  display: flex;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 8px 0px 0px;
+}
+.header__images {
+  display: flex;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(50px + 50 * ((100vw - 320px) / 1600));
+}
+.header__sub-image img {
+  width: 100%;
+  height: 100%;
+}
+.header__sub-image {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: absolute;
+}
+.header__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+.header__name span {
+  font-family: "Sofia";
+  font-weight: 400;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 1600));
+  line-height: 3.1875rem;
+  color: #ffffff;
+}
+.header__navigthion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__silka {
+  /*   background: transparent; */
+  cursor: pointer;
+  transition: all 0.7s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+.header__spisok {
+  gap: 66px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 1600));
+  line-height: 38px;
+  /* identical to box height */
+  display: flex;
+}
+.header__end {
+  margin: 0 0 0 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 3 */
+.header__silka {
+  color: #ffffff;
+  background: rgb(0, 172, 238);
+  background: #8b4513;
+  border-radius: 50%;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.header__silka span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header__silka:before,
+.header__silka:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgb(255, 255, 255);
+  transition: all 0.7s ease;
+}
+
+.header__silka:before {
+  height: 0%;
+  width: 2px;
+}
+
+.header__silka:after {
+  width: 0%;
+  height: 2px;
+}
+
+.header__silka:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.header__silka:hover:before {
+  height: 100%;
+}
+
+.header__silka:hover:after {
+  width: 100%;
+}
+
+.header__silka span:hover {
+  color: #ffffff;
+}
+
+.header__silka span:before,
+.header__silka span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+  transition: all 0.7s ease;
+}
+
+.header__silka span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.header__silka span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.header__silka span:hover:before {
+  height: 100%;
+}
+
+.header__silka span:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .header__images {
+    display: none;
+  }
+}
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+  .header__end {
+    margin: 0 0 0 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+  .header__end {
+    margin: 0 0 0 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+  .header__end {
+    margin: 0 0 0 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 10px;
+  }
+  .header__spisok li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__end {
+    margin: 0 0 0 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.wrapper {
+  background-color: #8b4513;
+}
+/*# sourceMappingURL=style.min.css.map */
