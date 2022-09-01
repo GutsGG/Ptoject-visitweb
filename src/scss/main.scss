@@ -1,0 +1,155 @@
+.toy {
+	background: rgba(244, 170, 183, 0.28);
+	&__container {
+		max-width: 1112px;
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__inf {
+	}
+	&__foto1 {
+		z-index: 1;
+		position: relative;
+	}
+	&__foto2 {
+		top: 40px;
+		left: 700px;
+		position: absolute;
+	}
+	&__foto1 img {
+		width: 336.43px;
+		height: 377.73px;
+		border-radius: 52.2384px;
+		box-shadow: 5px 5px 40px 25px #f5adb1;
+	}
+	&__images {
+		padding: 112px 0;
+	}
+}
+.inf {
+	display: flex;
+	flex-direction: column;
+	max-width: 665px;
+	padding: 136px 20px 0 0;
+	&__title {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		// font-size: 64.3051px;
+		@include adaptiveFont(64, 30);
+		line-height: rem(45);
+
+		color: #000000;
+	}
+
+	&__text {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		// font-size: 24.1144px;
+		@include adaptiveFont(24, 16);
+		line-height: 28px;
+
+		color: #000000;
+		padding: 35px 0;
+	}
+}
+.button a {
+	color: #fff;
+	margin: 20px 0px;
+}
+.button {
+	box-shadow: 10.2384px 10.0429px 30.1669px 10px rgba(0, 0, 0, 0.25);
+	// 10.2384px 8.0429px 18.1669px 10px
+	// margin: 20px 0px;
+	@include flex-center;
+	border-radius: 15px;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	// font-size: 24.1144px;
+	@include adaptiveFont(24, 16);
+	line-height: rem(28);
+	color: #fdfdfd;
+	position: relative;
+	width: 20vw;
+	// border: none;
+	background: rgba(58, 23, 45, 0.58);
+	// background: linear-gradient(0deg, rgba(251, 33, 117, 1) 0%, rgba(234, 76, 137, 1) 100%);
+	color: #fff;
+	overflow: hidden;
+}
+
+/* 11 */
+.button:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.button:before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: -180px;
+	left: 0;
+	width: 50px;
+	height: 100%;
+	// background-color: #fff;
+	background-color: rgba(244, 170, 183, 0.28);
+	// background-color: rgba(244, 170, 183, 0.53);
+	animation: shiny-btn1 3s ease-in-out infinite;
+}
+.button:hover {
+	opacity: 0.7;
+}
+.button:active {
+	box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+		inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+	0% {
+		-webkit-transform: scale(0) rotate(45deg);
+		opacity: 0;
+	}
+	80% {
+		-webkit-transform: scale(0) rotate(45deg);
+		opacity: 0.5;
+	}
+	81% {
+		-webkit-transform: scale(4) rotate(45deg);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(50) rotate(45deg);
+		opacity: 0;
+	}
+}
+//---------MEDIA-----------
+@media (max-width: 375px) {
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 480px) and (max-width: 768px) {
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+}

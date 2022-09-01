@@ -45,6 +45,22 @@
 		@include adaptiveFont(32, 16);
 		line-height: rem(51);
 		color: black;
+		position: relative;
+	}
+	&__name span::before {
+		// content: "";
+		// position: absolute;
+		content: "";
+		display: inline-block;
+		position: absolute;
+		width: 100%;
+		height: 60%;
+		background-image: url("../img/line.png");
+		background-repeat: no-repeat;
+		// padding: 20px 0;
+		top: 5%;
+		// transform: translate(20px, -10px);
+		transform: rotate(-5deg);
 	}
 
 	&__navigthion {
@@ -71,7 +87,8 @@
 		display: flex;
 	}
 	&__spisok span {
-		// padding: 0px 10px 0px 10px;
+		font-family: "Raleway";
+		font-style: normal;
 	}
 
 	&__end {
@@ -86,11 +103,8 @@
 	background: rgb(0, 172, 238);
 	background: rgba(244, 170, 183, 0.53);
 	border-radius: 20px;
-	// width: 230px;
-	// height: 40px;
 	padding: 0px 10px;
 	line-height: 42px;
-	// padding: 0;
 	border: none;
 }
 .header__silka:hover {
@@ -136,7 +150,10 @@
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.header__images {
-		display: none;
+		// display: none;
+	}
+	.header__name span::before {
+		top: 10%;
 	}
 	.header__spisok {
 		gap: 15px;
@@ -152,6 +169,9 @@
 	.header__images {
 		display: none;
 	}
+	.header__name span::before {
+		top: 20%;
+	}
 	.header__spisok {
 		gap: 15px;
 	}
@@ -162,6 +182,9 @@
 }
 @media (min-width: 480px) and (max-width: 768px) {
 	.header__images {
+		display: none;
+	}
+	.header__name span::before {
 		display: none;
 	}
 	.header__spisok {
@@ -192,6 +215,9 @@
 	}
 	.header__spisok li {
 		@include flex-center;
+	}
+	.header__name span::before {
+		display: none;
 	}
 	.header__end {
 		margin: 0 0 0 33px;
