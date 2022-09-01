@@ -306,7 +306,7 @@ body {
   font-weight: 400;
   font-size: calc(16px + 16 * ((100vw - 320px) / 1600));
   line-height: 3.1875rem;
-  color: #ffffff;
+  color: black;
 }
 .header__navigthion {
   display: flex;
@@ -322,7 +322,7 @@ body {
   outline: none;
 }
 .header__spisok {
-  gap: 66px;
+  gap: 60px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 100;
@@ -340,85 +340,45 @@ body {
 
 /* 3 */
 .header__silka {
-  color: #ffffff;
+  color: black;
   background: rgb(0, 172, 238);
-  background: #8b4513;
-  border-radius: 50%;
+  background: rgba(244, 170, 183, 0.53);
+  border-radius: 20px;
+  padding: 0px 10px;
   line-height: 42px;
-  padding: 0;
   border: none;
 }
 
-.header__silka span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.header__silka:before,
-.header__silka:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  background: rgb(255, 255, 255);
-  transition: all 0.7s ease;
-}
-
-.header__silka:before {
-  height: 0%;
-  width: 2px;
-}
-
-.header__silka:after {
-  width: 0%;
-  height: 2px;
-}
-
 .header__silka:hover {
+  color: #f0094a;
   background: transparent;
   box-shadow: none;
 }
 
-.header__silka:hover:before {
-  height: 100%;
-}
-
-.header__silka:hover:after {
-  width: 100%;
-}
-
-.header__silka span:hover {
-  color: #ffffff;
-}
-
-.header__silka span:before,
-.header__silka span:after {
-  position: absolute;
+.header__silka:before,
+.header__silka:after {
   content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f0094a;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1333333333);
+  transition: 400ms ease all;
+}
+
+.header__silka:after {
+  right: inherit;
+  top: inherit;
   left: 0;
   bottom: 0;
-  background: rgb(255, 255, 255);
-  transition: all 0.7s ease;
 }
 
-.header__silka span:before {
-  width: 2px;
-  height: 0%;
-}
-
-.header__silka span:after {
-  width: 0%;
-  height: 2px;
-}
-
-.header__silka span:hover:before {
-  height: 100%;
-}
-
-.header__silka span:hover:after {
+.header__silka:hover:before,
+.header__silka:hover:after {
   width: 100%;
+  transition: 800ms ease all;
 }
 
 @media (max-width: 375px) {
@@ -501,5 +461,5 @@ body {
   }
 }
 .wrapper {
-  background-color: #8b4513;
+  background-color: rgba(244, 170, 183, 0.53);
 }
