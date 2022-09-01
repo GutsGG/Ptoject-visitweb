@@ -37,6 +37,7 @@
 		flex-direction: column;
 		justify-content: center;
 		flex: 1 0 auto;
+		padding: 0px 10px 0px 0px;
 	}
 	&__name span {
 		font-family: "Sofia";
@@ -219,8 +220,14 @@
 	.header__name span::before {
 		display: none;
 	}
+	.header__name {
+		padding: 0px 10px 0px 0px;
+	}
 	.header__end {
-		margin: 0 0 0 33px;
+		margin: 0 0 0 15px;
 		@include flex-center;
+	}
+	.header__silka {
+		min-width: 70px;
 	}
 }

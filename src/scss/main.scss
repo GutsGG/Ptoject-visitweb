@@ -1,5 +1,5 @@
 .toy {
-	background: rgba(244, 170, 183, 0.28);
+	// background-color: rgba(244, 170, 183, 0.53);
 	&__container {
 		max-width: 1112px;
 		margin: 0 auto;
@@ -16,11 +16,7 @@
 		z-index: 1;
 		position: relative;
 	}
-	&__foto2 {
-		top: 40px;
-		left: 700px;
-		position: absolute;
-	}
+
 	&__foto1 img {
 		width: 336.43px;
 		height: 377.73px;
@@ -28,21 +24,21 @@
 		box-shadow: 5px 5px 40px 25px #f5adb1;
 	}
 	&__images {
-		padding: 112px 0;
+		padding: 112px 15px 0 0;
 	}
 }
 .inf {
 	display: flex;
 	flex-direction: column;
 	max-width: 665px;
-	padding: 136px 20px 0 0;
+	padding: 136px 20px 15px 15px;
 	&__title {
 		font-family: "Raleway";
 		font-style: normal;
 		font-weight: 400;
 		// font-size: 64.3051px;
 		@include adaptiveFont(64, 30);
-		line-height: rem(45);
+		line-height: rem(60);
 
 		color: #000000;
 	}
@@ -139,12 +135,84 @@
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+	.toy__row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf {
+		padding: 45px 20px 15px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf__text {
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+		text-align: center;
+	}
+	.toy__images {
+		padding: 52px 0px 0 0;
+	}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	.toy__row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf {
+		padding: 35px 20px 15px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf__text {
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+		text-align: center;
+	}
+	.toy__images {
+		padding: 30px 0px 0 0;
+	}
 }
 @media (min-width: 480px) and (max-width: 768px) {
+	.toy__row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf {
+		padding: 35px 20px 15px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf__text {
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+		text-align: center;
+	}
+	.toy__images {
+		padding: 30px 0px 0 0;
+	}
+	.button {
+		text-align: center;
+	}
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
@@ -152,4 +220,34 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+	.toy__row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf {
+		padding: 35px 20px 15px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.inf__text {
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+		text-align: center;
+	}
+	.toy__images {
+		padding: 30px 0px 0 0;
+	}
+	.button {
+		text-align: center;
+		padding: 3px 166px;
+	}
+	.button a {
+		margin: 3px 0;
+	}
 }
