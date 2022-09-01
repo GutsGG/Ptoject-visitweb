@@ -1,0 +1,86 @@
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- Slider main container -->
+<section>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <div class="swiper-container">
+        <!-- Slides -->
+        <div class="tovar swiper-slide">
+          <div class="cart">
+            <div class="cart__row">
+              <div class="cart__item">
+                <div class="cart__img">
+                  <img src="@img/number.jpg" alt="" />
+                </div>
+                <div class="cart__text">Stud earrings with sweats and bear</div>
+                <div class="cart__many">$2,25</div>
+                <div class="cert__btn">
+                  <a href="#"><span>Свзаться</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tovar swiper-slide">
+          <div class="cart">
+            <div class="cart__row">
+              <div class="cart__item">
+                <div class="cart__img">
+                  <img src="@img/number.jpg" alt="" />
+                </div>
+                <div class="cart__text">Stud earrings with sweats and bear</div>
+                <div class="cart__many">$2,25</div>
+                <div class="cert__btn">
+                  <a href="#"><span>Свзаться</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tovar swiper-slide">
+          <div class="cart">
+            <div class="cart__row">
+              <div class="cart__item">
+                <div class="cart__img">
+                  <img src="@img/number.jpg" alt="" />
+                </div>
+                <div class="cart__text">Stud earrings with sweats and bear</div>
+                <div class="cart__many">$2,25</div>
+                <div class="cert__btn">
+                  <a href="#"><span>Свзаться</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <script>
+    const swiper = new Swiper(".swiper-container", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 70,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</section>
