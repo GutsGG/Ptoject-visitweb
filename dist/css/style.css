@@ -766,12 +766,13 @@ body {
 @media (max-width: 480px) {
   .cart__item {
     gap: 10px;
+    min-width: 200.59px;
   }
   .cart__text {
     line-height: 0.9375rem;
   }
   .swiper-slide {
-    padding: 0 60px;
+    padding: 0 90px;
   }
 }
 /* 14 */
