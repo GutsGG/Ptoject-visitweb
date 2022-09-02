@@ -153,6 +153,8 @@
 	&__many {
 		@include adaptiveFont(20, 16);
 		z-index: 1;
+		font-family: "Raleway";
+		font-style: normal;
 	}
 }
 .cart {

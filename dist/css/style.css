@@ -718,6 +718,8 @@ body {
 .cart__many {
   font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
   z-index: 1;
+  font-family: "Raleway";
+  font-style: normal;
 }
 
 .cart__btn span {
