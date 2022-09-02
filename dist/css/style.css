@@ -828,6 +828,63 @@ body {
   top: 2px;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.collage__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ogr {
+  width: calc(100% / 4);
+  margin: 2px;
+}
+
+.padded-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.padded-container {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 14.0625%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .grid {
+    flex-direction: column;
+  }
+  .padded-container {
+    height: 150px;
+    width: 150px;
+  }
+}
 .wrapper {
   background-color: rgba(244, 170, 183, 0.53);
 }
