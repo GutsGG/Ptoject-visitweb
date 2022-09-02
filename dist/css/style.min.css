@@ -604,6 +604,7 @@ body {
   }
 }
 .swiper-container {
+  z-index: 1;
   width: 100%;
   height: 100%;
   display: flex;
@@ -611,6 +612,7 @@ body {
 }
 
 .swiper-slide {
+  z-index: 1;
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -626,9 +628,11 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  padding: 0 10px;
 }
 
 .swiper-slide img {
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
@@ -636,11 +640,13 @@ body {
 }
 
 .swiper-slide {
+  z-index: 1;
   display: flex;
   gap: 20px;
 }
 
 .swiper-container {
+  z-index: 1;
   width: 100%;
   height: 100%;
   margin: 20px auto;
@@ -650,12 +656,23 @@ body {
 }
 
 .append-buttons {
+  z-index: 1;
   text-align: center;
   margin-top: 20px;
   display: none;
 }
 
+.append-buttons button {
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  z-index: 1;
+  padding: 0 60px;
+}
+
 .cart {
+  z-index: 1;
   max-width: 1120px;
   margin: 0 auto;
   /* Center slide text vertically */
@@ -675,6 +692,7 @@ body {
 }
 .cart__row {
   display: flex;
+  z-index: 1;
 }
 .cart__item {
   background: #f5f5bd;
@@ -686,23 +704,31 @@ body {
   gap: 35px;
   text-align: center;
   padding: 30px 20px;
+  z-index: 1;
 }
 .cart__text {
   max-width: 1120px;
   margin: 0 auto;
   font-family: "Raleway";
   font-style: normal;
-  font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
-  line-height: 1.125rem;
+  font-size: calc(14px + 10 * ((100vw - 320px) / 1600));
+  line-height: 1.25rem;
+  z-index: 1;
 }
 .cart__many {
   font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+  z-index: 1;
+}
+
+.cart__btn span {
+  z-index: 1;
 }
 
 .slider {
   background: rgba(244, 170, 183, 0.28);
   width: 100%;
   height: 100%;
+  padding: 0 15px;
 }
 
 .slider__title {
@@ -713,11 +739,93 @@ body {
   font-size: calc(16px + 32 * ((100vw - 320px) / 1600));
   line-height: 57px;
   color: #000000;
+  z-index: 1;
 }
 
 .slider__container {
   max-width: 1000px;
   margin: 0 auto;
+  z-index: 1;
+}
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cart__item {
+    gap: 20px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .cart__item {
+    gap: 10px;
+  }
+}
+/* Landscape phones and portrait tablets */
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .cart__item {
+    gap: 10px;
+  }
+  .cart__text {
+    line-height: 0.9375rem;
+  }
+  .swiper-slide {
+    padding: 0 60px;
+  }
+}
+/* 14 */
+/* 15 */
+.cart__btn-14 a {
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
+}
+
+.cart__btn-14 {
+  padding: 10px 10px;
+  margin: 0 10px;
+  background: rgb(138, 97, 113);
+  border: none;
+  z-index: 1;
+  border-radius: 15px;
+  color: black;
+  /*   background: transparent; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.cart__btn-14:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: rgb(226, 163, 187);
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cart__btn-14:hover {
+  color: #fff;
+}
+
+.cart__btn-14:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.cart__btn-14:active {
+  top: 2px;
 }
 
 .wrapper {
