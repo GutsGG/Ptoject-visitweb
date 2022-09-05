@@ -21,6 +21,19 @@ html {
 .page {
 	flex: 1 1 auto;
 }
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+	background-color: #f9f9fd;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: linear-gradient(180deg, #edc1f3, #e959fc);
+}
 
 // //---------MEDIA-----------
 // @media (max-width: 375px) {
