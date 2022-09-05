@@ -1,0 +1,134 @@
+@import "mixins";
+.about {
+	background-color: rgba(244, 170, 183, 0.28);
+	&__container {
+		max-width: 1180px;
+		margin: 0 auto;
+		padding: 50px 0;
+	}
+	&__row {
+		padding: 0 15px;
+		display: flex;
+		gap: 74px;
+		flex-wrap: warp;
+	}
+
+	&__item {
+		// padding: 96px 0 0 0;
+		@include flex-center-column;
+		max-width: 516px;
+	}
+
+	&__title {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		// font-size: 48.2288px;
+		@include adaptiveFont(48, 30);
+		line-height: rem(57);
+
+		color: #0c0c0c;
+		padding: 0 0 20px 0;
+	}
+
+	&__text {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		// font-size: 27.1287px;
+		@include adaptiveFont(27, 16);
+		line-height: rem(32);
+
+		color: #000000;
+	}
+	&__text p {
+		padding: 20px 0 0 0;
+	}
+
+	&__img img {
+		width: 100%;
+		height: auto;
+		border-radius: 48px;
+	}
+	&__img {
+		@include flex-center;
+	}
+}
+//---------MEDIA-----------
+@media (max-width: 375px) {
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.about__row {
+		display: flex;
+		flex-direction: column;
+		// text-align: center;
+	}
+	.about__img img {
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 48px;
+	}
+	.about__item {
+		@include flex-center;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media (min-width: 480px) and (max-width: 768px) {
+	.about__row {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		// text-align: center;
+	}
+	.about__img img {
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 48px;
+	}
+	.about__item {
+		@include flex-center;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	.about__row {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
+		// text-align: center;
+	}
+	.about__img img {
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 48px;
+	}
+	.about__item {
+		@include flex-center;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.about__text {
+		line-height: rem(22);
+	}
+}
+//---------MEDIA-----------
