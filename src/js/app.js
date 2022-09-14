@@ -4,11 +4,12 @@ import * as consoleLogs from "./modules/consolelog.js";
 
 flsFunctions.isWebp();
 
-import Swiper, {
-	Navigation,
-	Pagination
-} from 'swiper';
+// import Swiper, {
+// 	Navigation,
+// 	Pagination
+// } from 'swiper';
 
-const swiper = new Swiper();
+// const swiper = new Swiper();
 
-consoleLogs.consoleLog();
+// consoleLogs.consoleLog();
+// console.log('hello')
