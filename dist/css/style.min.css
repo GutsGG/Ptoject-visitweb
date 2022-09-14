@@ -842,6 +842,10 @@ body {
   top: 2px;
 }
 
+.demo {
+  padding: 50px 0;
+}
+
 .grid {
   display: flex;
   row-gap: 20px;
@@ -869,7 +873,7 @@ body {
   height: 0;
   position: relative;
   overflow: hidden;
-  padding-bottom: 14.0625%;
+  padding-bottom: 21.5625%;
 }
 
 .img {

@@ -1,6 +1,8 @@
-$ratio-16-9: 56.25%;
+$ratio-16-9: 86.25%;
 $cols: 4;
-
+.demo{
+  padding:50px 0;
+}
 .grid {
 	display: flex;
 	row-gap: 20px;
