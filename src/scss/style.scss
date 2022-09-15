@@ -26,8 +26,8 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-	// -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-	background-color: #f9f9fd;
+	 -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+	background-color:  rgba(244, 170, 183, 0.53);
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
@@ -35,6 +35,35 @@ html {
 	background: linear-gradient(180deg, #edc1f3, #e959fc);
 }
 
+ //---------MEDIA-----------
+ @media (max-width: 375px) {
+ }
+
+ /* Large desktops and laptops */
+ @media (min-width: 1200px) {
+ }
+
+ /* Portrait tablets and medium desktops */
+ @media (min-width: 992px) and (max-width: 1199px) {
+ }
+
+ /* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+ }
+ @media (min-width: 480px) and (max-width: 768px) {
+ }
+ /* Landscape phones and portrait tablets */
+ @media (max-width: 767px) {
+ }
+
+ /* Landscape phones and smaller */
+@media (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+ }
+//---------MEDIA-----------
 // //---------MEDIA-----------
 // @media (max-width: 375px) {
 // }
