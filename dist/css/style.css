@@ -780,13 +780,13 @@ body {
     max-width: 200px;
   }
   .cart__text {
-    max-width: 150px;
+    max-width: 190px;
   }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .cart__text {
-    max-width: 200px;
+    max-width: 190px;
   }
 }
 /* Landscape phones and smaller */
@@ -797,7 +797,7 @@ body {
   }
   .cart__text {
     line-height: 0.9375rem;
-    max-width: 172px;
+    max-width: 160px;
   }
   .swiper-slide {
     display: flex;
