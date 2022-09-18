@@ -1,147 +1,160 @@
 @import "mixins";
 
 .header {
-	padding: 0 15px;
-	&__container {
-		max-width: 1185px;
-		margin: 0 auto;
-	}
+  padding: 0 15px;
 
-	&__row {
-		display: flex;
-	}
+  &__container {
+    max-width: 1185px;
+    margin: 0 auto;
+  }
 
-	&__logo {
-		@include flex-center;
-		padding: 0px 8px 0px 0px;
-	}
+  &__row {
+    display: flex;
+  }
 
-	&__images {
-		display: flex;
-		position: relative;
-		@include flex-center;
-		@include adaptiveFont(100, 50);
-	}
-	&__sub-image img {
-		width: 100%;
-		height: 100%;
-	}
-	&__sub-image {
-		width: 100%;
-		height: 100%;
-		padding: 15px;
-		position: absolute;
-	}
-	&__name {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex: 1 0 auto;
-		padding: 0px 10px 0px 0px;
-	}
-	&__name span {
-		font-family: "Sofia";
-		font-weight: 400;
-		// font-size: rem(32.1);
-		@include adaptiveFont(32, 16);
-		line-height: rem(51);
-		color: black;
-		position: relative;
-	}
-	&__name span::before {
-		// content: "";
-		// position: absolute;
-		content: "";
-		display: inline-block;
-		position: absolute;
-		width: 100%;
-		height: 60%;
-		background-image: url("../img/line.png");
-		background-repeat: no-repeat;
-		// padding: 20px 0;
-		top: 5%;
-		// transform: translate(20px, -10px);
-		transform: rotate(-5deg);
-	}
+  &__logo {
+    @include flex-center;
+    padding: 0px 8px 0px 0px;
+  }
 
-	&__navigthion {
-		@include flex-center;
-	}
-	&__silka {
-		/*   background: transparent; */
-		cursor: pointer;
-		transition: all 0.7s ease;
-		position: relative;
-		display: inline-block;
+  &__images {
+    display: flex;
+    position: relative;
+    @include flex-center;
+    @include adaptiveFont(100, 50);
+  }
 
-		outline: none;
-	}
-	&__spisok {
-		gap: 60px;
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 100;
-		// font-size: 32.1525px;
-		@include adaptiveFont(32, 16);
-		line-height: 38px;
-		/* identical to box height */
-		display: flex;
-	}
-	&__spisok span {
-		font-family: "Raleway";
-		font-style: normal;
-	}
+  &__sub-image img {
+    width: 100%;
+    height: 100%;
+  }
 
-	&__end {
-		margin: 0 0 0 66px;
-		@include flex-center;
-	}
+  &__sub-image {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: absolute;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 auto;
+    padding: 0px 10px 0px 0px;
+  }
+
+  &__name span {
+    font-family: "Sofia";
+    font-weight: 400;
+    // font-size: rem(32.1);
+    @include adaptiveFont(32, 16);
+    line-height: rem(51);
+    color: black;
+    position: relative;
+  }
+
+  &__name span::before {
+    // content: "";
+    // position: absolute;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-image: url("../img/line.png");
+    background-repeat: no-repeat;
+    // padding: 20px 0;
+    top: 5%;
+    // transform: translate(20px, -10px);
+    transform: rotate(-5deg);
+  }
+
+  &__navigthion {
+    @include flex-center;
+  }
+
+  &__silka {
+    /*   background: transparent; */
+    cursor: pointer;
+    transition: all 0.7s ease;
+    position: relative;
+    display: inline-block;
+
+    outline: none;
+  }
+
+  &__spisok {
+    gap: 60px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 100;
+    // font-size: 32.1525px;
+    @include adaptiveFont(32, 16);
+    line-height: 38px;
+    /* identical to box height */
+    display: flex;
+  }
+
+  &__spisok span {
+    font-family: "Raleway";
+    font-style: normal;
+  }
+
+  &__end {
+    margin: 0 0 0 66px;
+    @include flex-center;
+  }
 }
 
 /* 3 */
 .header__silka {
-	color: black;
-	background: rgb(0, 172, 238);
-	background: rgba(244, 170, 183, 0.53);
-	border-radius: 20px;
-	padding: 0px 10px;
-	line-height: 42px;
-	border: none;
+  color: black;
+  background: rgb(0, 172, 238);
+  background: rgba(244, 170, 183, 0.53);
+  border-radius: 20px;
+  padding: 0px 10px;
+  line-height: 42px;
+  border: none;
 }
+
 .header__silka:hover {
-	color: #f0094a;
-	background: transparent;
-	box-shadow: none;
+  color: #f0094a;
+  background: transparent;
+  box-shadow: none;
 }
+
 .header__silka:before,
 .header__silka:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 2px;
-	width: 0;
-	background: #f0094a;
-	box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
-	transition: 400ms ease all;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f0094a;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
 }
+
 .header__silka:after {
-	right: inherit;
-	top: inherit;
-	left: 0;
-	bottom: 0;
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
+
 .header__silka:hover:before,
 .header__silka:hover:after {
-	width: 100%;
-	transition: 800ms ease all;
+  width: 100%;
+  transition: 800ms ease all;
 }
 
 //---------MEDIA-----------
 @media (max-width: 375px) {
-	.header__images {
-		display: none;
-	}
+  .header__images {
+    display: none;
+  }
 }
 
 /* Large desktops and laptops */
@@ -150,92 +163,96 @@
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-	.header__images {
-		// display: none;
-	}
-	.header__name span::before {
-		top: 10%;
-	}
-	.header__spisok {
-		gap: 15px;
-	}
-	.header__end {
-		margin: 0 0 0 43px;
-		@include flex-center;
-	}
+  .header__images {
+    // display: none;
+  }
+  .header__name span::before {
+    top: 10%;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+  .header__end {
+    margin: 0 0 0 43px;
+    @include flex-center;
+  }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-	.header__images {
-		display: none;
-	}
-	.header__name span::before {
-		top: 20%;
-	}
-	.header__spisok {
-		gap: 15px;
-	}
-	.header__end {
-		margin: 0 0 0 43px;
-		@include flex-center;
-	}
+  .header__images {
+    display: none;
+  }
+  .header__name span::before {
+    top: 20%;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+  .header__end {
+    margin: 0 0 0 43px;
+    @include flex-center;
+  }
 }
+
 @media (min-width: 480px) and (max-width: 768px) {
-	.header__images {
-		display: none;
-	}
-	.header__name span::before {
-		display: none;
-	}
-	.header__spisok {
-		gap: 15px;
-	}
-	.header__end {
-		margin: 0 0 0 33px;
-		@include flex-center;
-	}
+  .header__images {
+    display: none;
+  }
+  .header__name span::before {
+    display: none;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
+  .header__end {
+    margin: 0 0 0 33px;
+    @include flex-center;
+  }
 }
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-	.header__images {
-		display: none;
-	}
-	.header__spisok {
-		gap: 15px;
-	}
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 15px;
+  }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-	.header__images {
-		display: none;
-	}
-	.header__spisok {
-		gap: 10px;
-	}
-	.header__spisok li {
-		@include flex-center;
-	}
-	.header__name span::before {
-		display: none;
-	}
-	.header__name {
-		padding: 0px 10px 0px 0px;
-	}
-	.header__end {
-		margin: 0 0 0 15px;
-		@include flex-center;
-	}
-	.header__silka {
-		min-width: 70px;
-	}
+  .header__images {
+    display: none;
+  }
+  .header__spisok {
+    gap: 10px;
+  }
+  .header__spisok li {
+    @include flex-center;
+  }
+  .header__name span::before {
+    display: none;
+  }
+  .header__name {
+    padding: 0px 10px 0px 0px;
+  }
+  .header__end {
+    margin: 0 0 0 15px;
+    @include flex-center;
+  }
+  .header__silka {
+    min-width: 70px;
+  }
 }
+
 .btn-block {
   margin: 100px auto;
   width: 80%;
   text-align: center;
 }
+
 /* сами кнопы демо------------------------------------------------------------------------------------------------------------ */
 
 //.btn {
@@ -287,6 +304,7 @@
   height: 100%;
   z-index: 1000;
 }
+
 /* активируем модальное окно */
 
 .dm-overlay:target {
@@ -295,13 +313,20 @@
   -moz-animation: fade .6s;
   animation: fade .6s;
 }
+
 /* блочная таблица */
+.textAbout {
+  color: black;
+  font-family: "Raleway";
+  line-height: 20px;
+}
 
 .dm-table {
   display: table;
   width: 100%;
   height: 100%;
 }
+
 /* ячейка блочной таблицы */
 
 .dm-cell {
@@ -311,11 +336,13 @@
   text-align: center;
 
 }
+
 /* модальный блок */
-.dm-modal h3{
+.dm-modal h3 {
   color: black;
   font-size: 20px;
 }
+
 .dm-modal {
   border-radius: 20px;
   display: inline-block;
@@ -329,36 +356,42 @@
   color: #cfd8dc;
   text-align: left;
 }
-.dm-modal li{
+
+.dm-modal li {
   color: black;
   text-align: left;
   @include flex-center-column;
   line-height: 30px;
 }
-.dm-modal li:first-child{
+
+.dm-modal li:first-child {
   padding: 20px 0 0 0;
   margin: 0 0 0 28px;
 }
-.contackt a:active{
-  text-decoration: none;
+
+.contackt {
+  color: black;
 }
+
 /* изображения в модальном окне */
 
 .dm-modal img {
   width: 100%;
   height: auto;
 }
+
 .close {
   z-index: 9999;
   float: right;
   width: 30px;
   height: 30px;
-  color: black;
+  color: red;
   text-align: center;
   text-decoration: none;
   line-height: 26px;
   cursor: pointer;
 }
+
 .close:after {
   display: block;
   //border: 2px solid #cfd8dc;
@@ -374,6 +407,7 @@
   -ms-transform: scale(0.85);
   transform: scale(0.85);
 }
+
 /* кнопка закрытия при наведении */
 
 .close:hover:after {

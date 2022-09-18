@@ -1,61 +1,64 @@
 @import "mixins";
 
 .footer {
-	background-color: rgba(58, 23, 45, 0.88);
-	&__container {
-		padding: 64px 0;
-		max-width: 1175px;
-		margin: 0 auto;
-	}
+  background-color: rgba(58, 23, 45, 0.88);
 
-	&__row {
-		display: flex;
-		gap: 226px;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		padding: 0 15px;
-	}
+  &__container {
+    padding: 64px 0;
+    max-width: 1175px;
+    margin: 0 auto;
+  }
 
-	&__follow-us {
-	}
+  &__row {
+    display: flex;
+    gap: 226px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
 
-	&__title {
-		text-align: center;
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 400;
-		// font-size: 36.1716px;
-		@include adaptiveFont(36, 18);
-		line-height: rem(42);
+  &__follow-us {
+  }
 
-		color: #ffffff;
-		padding: 0 0 18px 0;
-	}
+  &__title {
+    text-align: center;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 36.1716px;
+    @include adaptiveFont(36, 18);
+    line-height: rem(42);
 
-	&__link {
-		align-items: center;
-	}
+    color: #ffffff;
+    padding: 0 0 18px 0;
+  }
 
-	&__spisok {
-		@include flex-center;
-		gap: 5px;
-	}
+  &__link {
+    align-items: center;
+  }
 
-	&__contact-us {
-	}
+  &__spisok {
+    @include flex-center;
+    gap: 5px;
+  }
 
-	&__email {
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		// @include adaptiveFont(16, 10);
-		line-height: rem(42);
-		text-decoration: underline;
-		color: #ffffff;
-	}
+  &__contact-us {
+  }
+
+  &__email {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    // @include adaptiveFont(16, 10);
+    line-height: rem(42);
+    text-decoration: underline;
+    color: #ffffff;
+    padding: 0 0 24px 0px;
+  }
 }
+
 //---------MEDIA-----------
 @media (max-width: 375px) {
 }
@@ -71,28 +74,31 @@
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 }
+
 @media (min-width: 480px) and (max-width: 768px) {
-	.footer__row {
-		gap: 100px;
-	}
-	.footer__container {
-		padding: 20px 0;
-	}
+  .footer__row {
+    gap: 100px;
+  }
+  .footer__container {
+    padding: 20px 0;
+  }
 }
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-	.footer__row {
-		gap: 50px;
-	}
-	.footer__container {
-		padding: 20px 0;
-	}
-	.footer__title {
-		padding: 0 0 0 10px;
-	}
+  .footer__row {
+    gap: 50px;
+  }
+  .footer__container {
+    padding: 20px 0;
+  }
+  .footer__title {
+    padding: 0 0 0 10px;
+  }
 }
+
 //---------MEDIA-----------

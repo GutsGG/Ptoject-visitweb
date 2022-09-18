@@ -418,6 +418,12 @@ body {
 }
 
 /* блочная таблица */
+.textAbout {
+  color: black;
+  font-family: "Raleway";
+  line-height: 20px;
+}
+
 .dm-table {
   display: table;
   width: 100%;
@@ -467,8 +473,8 @@ body {
   margin: 0 0 0 28px;
 }
 
-.contackt a:active {
-  text-decoration: none;
+.contackt {
+  color: black;
 }
 
 /* изображения в модальном окне */
@@ -482,7 +488,7 @@ body {
   float: right;
   width: 30px;
   height: 30px;
-  color: black;
+  color: red;
   text-align: center;
   text-decoration: none;
   line-height: 26px;
@@ -1214,6 +1220,7 @@ body {
   line-height: 2.625rem;
   text-decoration: underline;
   color: #ffffff;
+  padding: 0 0 24px 0px;
 }
 
 /* Large desktops and laptops */
