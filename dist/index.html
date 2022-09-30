@@ -104,151 +104,234 @@
   </div>
 </section>
 
-        <section>
-  <div class="slider">
-    <div class="slider__container">
-      <div class="slider__title">Изделия</div>
-      <div #swiperRef="" class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="cart">
-              <div class="cart__row">
-                <div class="cart__item">
-                  <div class="cart__img">
-                    <img src="img/number.jpg" alt="" />
-                  </div>
-                  <div class="cart__text">Мягкая иргушка маленькая котёнок</div>
-                  <div class="cart__many">1200 руб.</div>
-                  <div class="cart__btn-14">
-                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>
-                  </div>
-                </div>
-              </div>
+        <!--<section>-->
+<!--  <div class="slider">-->
+<!--    <div class="slider__container">-->
+<!--      <div class="slider__title">Изделия</div>-->
+<!--      <div #swiperRef="" class="swiper-container mySwiper">-->
+<!--        <div class="swiper-wrapper">-->
+<!--          <div class="swiper-slide">-->
+<!--            <div class="cart">-->
+<!--              <div class="cart__row">-->
+<!--                <div class="cart__item">-->
+<!--                  <div class="cart__img">-->
+<!--                    <img src="img/number.jpg" alt="" />-->
+<!--                  </div>-->
+<!--                  <div class="cart__text">Мягкая иргушка маленькая котёнок</div>-->
+<!--                  <div class="cart__many">1200 руб.</div>-->
+<!--                  <div class="cart__btn-14">-->
+<!--                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="swiper-slide">-->
+<!--            <div class="cart">-->
+<!--              <div class="cart__row">-->
+<!--                <div class="cart__item">-->
+<!--                  <div class="cart__img">-->
+<!--                    <img src="img/number.jpg" alt="" />-->
+<!--                  </div>-->
+<!--                  <div class="cart__text">Мягкая иргушка маленькая котёнок</div>-->
+<!--                  <div class="cart__many">1200 руб.</div>-->
+<!--                  <div class="cart__btn-14">-->
+<!--                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="swiper-slide">-->
+<!--            <div class="cart">-->
+<!--              <div class="cart__row">-->
+<!--                <div class="cart__item">-->
+<!--                  <div class="cart__img">-->
+<!--                    <img src="img/number.jpg" alt="" />-->
+<!--                  </div>-->
+<!--                  <div class="cart__text">Мягкая иргушка маленькая медведь</div>-->
+<!--                  <div class="cart__many">1000 руб.</div>-->
+<!--                  <div class="cart__btn-14">-->
+<!--                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="swiper-slide">-->
+<!--            <div class="cart">-->
+<!--              <div class="cart__row">-->
+<!--                <div class="cart__item">-->
+<!--                  <div class="cart__img">-->
+<!--                    <img src="img/number.jpg" alt="" />-->
+<!--                  </div>-->
+<!--                  <div class="cart__text">Мягкая иргушка маленькая</div>-->
+<!--                  <div class="cart__many">600 руб.</div>-->
+<!--                  <div class="cart__btn-14">-->
+<!--                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; <div class="swiper-button-next">Next</div>-->
+<!--      <div class="swiper-button-prev">Pre</div>!&ndash;&gt;-->
+<!--        &lt;!&ndash; <div class="swiper-pagination"></div> &ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <p class="append-buttons">-->
+<!--    <button class="prepend-2-slides">Prepend 2 Slides</button>-->
+<!--    <button class="prepend-slide">Prepend Slide</button>-->
+<!--    <button class="append-slide">Append Slide</button>-->
+<!--    <button class="append-2-slides">Append 2 Slides</button>-->
+<!--  </p>-->
+
+<!--  &lt;!&ndash; Swiper JS &ndash;&gt;-->
+<!--  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>-->
+
+<!--  &lt;!&ndash; Initialize Swiper &ndash;&gt;-->
+<!--  <script>-->
+<!--    var swiper = new Swiper(".swiper-container", {-->
+<!--      slidesPerView: 3,-->
+<!--      centeredSlides: true,-->
+<!--      spaceBetween: 30,-->
+<!--      // freeMode: true,-->
+
+<!--      mousewheel: {-->
+<!--        invert: true,-->
+<!--      },-->
+<!--      freeMode: true,-->
+<!--      followFinger: true,-->
+<!--      loop: true,-->
+<!--      watchOverflow: true,-->
+<!--      centeredSlides: true,-->
+<!--      spaceBetween: 30,-->
+
+<!--    });-->
+
+<!--    var appendNumber = 4;-->
+<!--    var prependNumber = 1;-->
+<!--    document-->
+<!--      .querySelector(".prepend-2-slides")-->
+<!--      .addEventListener("click", function (e) {-->
+<!--        e.preventDefault();-->
+<!--        swiper.prependSlide([-->
+<!--          '<div class="swiper-slide">Slide ' + &#45;&#45;prependNumber + "</div>",-->
+<!--          '<div class="swiper-slide">Slide ' + &#45;&#45;prependNumber + "</div>",-->
+<!--        ]);-->
+<!--      });-->
+<!--    document-->
+<!--      .querySelector(".prepend-slide")-->
+<!--      .addEventListener("click", function (e) {-->
+<!--        e.preventDefault();-->
+<!--        swiper.prependSlide(-->
+<!--          '<div class="swiper-slide">Slide ' + &#45;&#45;prependNumber + "</div>"-->
+<!--        );-->
+<!--      });-->
+<!--    document-->
+<!--      .querySelector(".append-slide")-->
+<!--      .addEventListener("click", function (e) {-->
+<!--        e.preventDefault();-->
+<!--        swiper.appendSlide(-->
+<!--          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"-->
+<!--        );-->
+<!--      });-->
+<!--    document-->
+<!--      .querySelector(".append-2-slides")-->
+<!--      .addEventListener("click", function (e) {-->
+<!--        e.preventDefault();-->
+<!--        swiper.appendSlide([-->
+<!--          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",-->
+<!--          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",-->
+<!--        ]);-->
+<!--      });-->
+<!--  </script>-->
+<!--</section>-->
+<div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+
+                <img src="img/number.jpg"
+                     alt="">
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="cart">
-              <div class="cart__row">
-                <div class="cart__item">
-                  <div class="cart__img">
-                    <img src="img/number.jpg" alt="" />
-                  </div>
-                  <div class="cart__text">Мягкая иргушка маленькая котёнок</div>
-                  <div class="cart__many">1200 руб.</div>
-                  <div class="cart__btn-14">
-                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>
-                  </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">1200 руб.</span>
+                <div class="blog-slider__title">Мягкая иргушка маленькая котёнок</div>
+                <div class="blog-slider__text">Хотите сделат подарок близкому человеку или как то украсить интерьер
+                    своего дома?
                 </div>
-              </div>
+                <a href="#" class="blog-slider__button">Купить</a>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="cart">
-              <div class="cart__row">
-                <div class="cart__item">
-                  <div class="cart__img">
-                    <img src="img/number.jpg" alt="" />
-                  </div>
-                  <div class="cart__text">Мягкая иргушка маленькая медведь</div>
-                  <div class="cart__many">1000 руб.</div>
-                  <div class="cart__btn-14">
-                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="cart">
-              <div class="cart__row">
-                <div class="cart__item">
-                  <div class="cart__img">
-                    <img src="img/number.jpg" alt="" />
-                  </div>
-                  <div class="cart__text">Мягкая иргушка маленькая</div>
-                  <div class="cart__many">600 руб.</div>
-                  <div class="cart__btn-14">
-                    <a href="tg://resolve?domain=Fcuk9999">Свзаться</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-        <!-- <div class="swiper-button-next">Next</div>
-      <div class="swiper-button-prev">Pre</div>!-->
-        <!-- <div class="swiper-pagination"></div> -->
-      </div>
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+
+                <img src="img/number.jpg"
+                     alt="">
+            </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">1200 руб.</span>
+                <div class="blog-slider__title">Мягкая иргушка маленькая медведь</div>
+                <div class="blog-slider__text">Хотите сделат подарок близкому человеку или как то украсить интерьер
+                    своего дома?
+                </div>
+                <a href="#" class="blog-slider__button">Купить</a>
+            </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+                <img src="img/number.jpg"
+                     alt="">
+            </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">1000 рублей.</span>
+                <div class="blog-slider__title">Мягкая иргушка маленькая</div>
+                <div class="blog-slider__text">Хотите сделат подарок близкому человеку или как то украсить интерьер
+                    своего дома?
+                </div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+                <img src="img/number.jpg"
+                     alt="">
+            </div>
+            <div class="blog-slider__content">
+                <span class="blog-slider__code">1000 рублейю</span>
+                <div class="blog-slider__title">Мягкая иргушка маленькая</div>
+                <div class="blog-slider__text">Хотите сделат подарок близкому человеку или как то украсить интерьер
+                    своего дома?
+                </div>
+                <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+        </div>
     </div>
-  </div>
-  <p class="append-buttons">
-    <button class="prepend-2-slides">Prepend 2 Slides</button>
-    <button class="prepend-slide">Prepend Slide</button>
-    <button class="append-slide">Append Slide</button>
-    <button class="append-2-slides">Append 2 Slides</button>
-  </p>
+    <div class="blog-slider__pagination"></div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
-      // freeMode: true,
-
-      mousewheel: {
-        invert: true,
-      },
-      freeMode: true,
-      followFinger: true,
-      loop: true,
-      watchOverflow: true,
-      centeredSlides: true,
-      spaceBetween: 30,
-
-    });
-
-    var appendNumber = 4;
-    var prependNumber = 1;
-    document
-      .querySelector(".prepend-2-slides")
-      .addEventListener("click", function (e) {
-        e.preventDefault();
-        swiper.prependSlide([
-          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-        ]);
+      <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.blog-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+          el: '.blog-slider__pagination',
+          clickable: true,
+        },
       });
-    document
-      .querySelector(".prepend-slide")
-      .addEventListener("click", function (e) {
-        e.preventDefault();
-        swiper.prependSlide(
-          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-        );
-      });
-    document
-      .querySelector(".append-slide")
-      .addEventListener("click", function (e) {
-        e.preventDefault();
-        swiper.appendSlide(
-          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-        );
-      });
-    document
-      .querySelector(".append-2-slides")
-      .addEventListener("click", function (e) {
-        e.preventDefault();
-        swiper.appendSlide([
-          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-        ]);
-      });
-  </script>
-</section>
+    </script>
+    </section>
+</div>
 <section>
   <div class="collage">
     <div class="collage__container">
